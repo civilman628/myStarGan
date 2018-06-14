@@ -26,7 +26,6 @@
     <Compile Include="solver.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="data\list_attr_celeba.txt" />
     <Content Include="jpg\logo.jpg" />
     <Content Include="jpg\main.jpg" />
     <Content Include="jpg\model.jpg" />
