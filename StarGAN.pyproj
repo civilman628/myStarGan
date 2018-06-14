@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b0dad2f7-9d0e-4fca-8768-75ed4df99118}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>main.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.5</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="data_loader.py" />
+    <Compile Include="logger.py" />
+    <Compile Include="main.py" />
+    <Compile Include="model.py" />
+    <Compile Include="solver.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\list_attr_celeba.txt" />
+    <Content Include="jpg\logo.jpg" />
+    <Content Include="jpg\main.jpg" />
+    <Content Include="jpg\model.jpg" />
+    <Content Include="jpg\model2.jpg" />
+    <Content Include="jpg\result_celeba1.jpg" />
+    <Content Include="jpg\result_celeba2.jpg" />
+    <Content Include="jpg\result_rafd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data" />
+    <Folder Include="jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.5" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
